@@ -15,6 +15,8 @@
 		DA47CD691D80B79E00F865B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */; };
 		DA47CD741D80B79E00F865B8 /* ARCUSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD731D80B79E00F865B8 /* ARCUSTests.swift */; };
 		DA47CD7F1D80B79E00F865B8 /* ARCUSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD7E1D80B79E00F865B8 /* ARCUSUITests.swift */; };
+		DA47CDAD1D8A1F0E00F865B8 /* EndModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CDAC1D8A1F0E00F865B8 /* EndModel.swift */; };
+		DACF8BCB1D94B8EC00C3BC5E /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DA47CD7A1D80B79E00F865B8 /* ARCUSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCUSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47CD7E1D80B79E00F865B8 /* ARCUSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCUSUITests.swift; sourceTree = "<group>"; };
 		DA47CD801D80B79E00F865B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA47CDAC1D8A1F0E00F865B8 /* EndModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndModel.swift; sourceTree = "<group>"; };
+		DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 			children = (
 				DA47CD5B1D80B79E00F865B8 /* AppDelegate.swift */,
 				DA47CD5D1D80B79E00F865B8 /* ViewController.swift */,
+				DA47CDAC1D8A1F0E00F865B8 /* EndModel.swift */,
+				DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */,
 				DA47CD5F1D80B79E00F865B8 /* Main.storyboard */,
 				DA47CD651D80B79E00F865B8 /* Assets.xcassets */,
 				DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */,
@@ -196,6 +202,7 @@
 				TargetAttributes = {
 					DA47CD571D80B79E00F865B8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3FZ36259FX;
 					};
 					DA47CD6E1D80B79E00F865B8 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -261,7 +268,9 @@
 			files = (
 				DA47CD641D80B79E00F865B8 /* ARCUS.xcdatamodeld in Sources */,
 				DA47CD5E1D80B79E00F865B8 /* ViewController.swift in Sources */,
+				DACF8BCB1D94B8EC00C3BC5E /* ButtonModel.swift in Sources */,
 				DA47CD5C1D80B79E00F865B8 /* AppDelegate.swift in Sources */,
+				DA47CDAD1D8A1F0E00F865B8 /* EndModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,10 +414,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ARCUS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -416,10 +428,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ARCUS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -488,6 +503,7 @@
 				DA47CD851D80B79E00F865B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA47CD861D80B79E00F865B8 /* Build configuration list for PBXNativeTarget "ARCUSTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +512,7 @@
 				DA47CD881D80B79E00F865B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA47CD891D80B79E00F865B8 /* Build configuration list for PBXNativeTarget "ARCUSUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +521,7 @@
 				DA47CD8B1D80B79E00F865B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
