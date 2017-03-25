@@ -1,3 +1,3 @@
 # ARCUS
 
-An app for archers striving to be awesome.
+An app for archers striving to be awesome. 🏹
