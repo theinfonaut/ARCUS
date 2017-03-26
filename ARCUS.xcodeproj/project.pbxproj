@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		916263831E88301400C89FD5 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916263821E88301400C89FD5 /* Shot.swift */; };
-		916263851E8830CE00C89FD5 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916263841E8830CE00C89FD5 /* Set.swift */; };
+		916263851E8830CE00C89FD5 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916263841E8830CE00C89FD5 /* Round.swift */; };
 		DA47CD5C1D80B79E00F865B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD5B1D80B79E00F865B8 /* AppDelegate.swift */; };
 		DA47CD5E1D80B79E00F865B8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD5D1D80B79E00F865B8 /* ViewController.swift */; };
 		DA47CD611D80B79E00F865B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA47CD5F1D80B79E00F865B8 /* Main.storyboard */; };
@@ -17,7 +17,6 @@
 		DA47CD691D80B79E00F865B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */; };
 		DA47CD741D80B79E00F865B8 /* ARCUSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD731D80B79E00F865B8 /* ARCUSTests.swift */; };
 		DA47CD7F1D80B79E00F865B8 /* ARCUSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA47CD7E1D80B79E00F865B8 /* ARCUSUITests.swift */; };
-		DACF8BCB1D94B8EC00C3BC5E /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		916263821E88301400C89FD5 /* Shot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
-		916263841E8830CE00C89FD5 /* Set.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Set.swift; sourceTree = "<group>"; };
+		916263841E8830CE00C89FD5 /* Round.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 		DA47CD581D80B79E00F865B8 /* ARCUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARCUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47CD5B1D80B79E00F865B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA47CD5D1D80B79E00F865B8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +53,6 @@
 		DA47CD7A1D80B79E00F865B8 /* ARCUSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARCUSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA47CD7E1D80B79E00F865B8 /* ARCUSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCUSUITests.swift; sourceTree = "<group>"; };
 		DA47CD801D80B79E00F865B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				DA47CD5F1D80B79E00F865B8 /* Main.storyboard */,
-				DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */,
 				DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */,
 			);
 			name = View;
@@ -104,7 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				916263821E88301400C89FD5 /* Shot.swift */,
-				916263841E8830CE00C89FD5 /* Set.swift */,
+				916263841E8830CE00C89FD5 /* Round.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -298,8 +295,7 @@
 			files = (
 				DA47CD641D80B79E00F865B8 /* ARCUS.xcdatamodeld in Sources */,
 				DA47CD5E1D80B79E00F865B8 /* ViewController.swift in Sources */,
-				DACF8BCB1D94B8EC00C3BC5E /* ButtonModel.swift in Sources */,
-				916263851E8830CE00C89FD5 /* Set.swift in Sources */,
+				916263851E8830CE00C89FD5 /* Round.swift in Sources */,
 				916263831E88301400C89FD5 /* Shot.swift in Sources */,
 				DA47CD5C1D80B79E00F865B8 /* AppDelegate.swift in Sources */,
 			);

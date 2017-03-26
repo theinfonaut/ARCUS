@@ -14,4 +14,5 @@ struct Shot {
     init(value: Double) {
         score = value
     }
+    
 }

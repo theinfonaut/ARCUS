@@ -12,11 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var endScoreLabel: UILabel!
     @IBOutlet weak var endScoreTotalLabel: UILabel!
     @IBOutlet weak var roundScoreTotalLabel: UILabel!
-    var set = [Shot]()
+    var round: Round!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        round = Round()
         endScoreLabel.text = ""
         endScoreTotalLabel.text = "0"
         roundScoreTotalLabel.text = "0"
@@ -28,18 +29,16 @@ class ViewController: UIViewController {
     
     @IBAction func numberButtonPressed(_ sender:UIButton) {
         let shot = Shot(value: Double(sender.tag))
-        set.append(shot)
         calculateAndSetUI(shot)
     }
     
     func calculateAndSetUI(_ shot: Shot) {
-        Set.sharedInstance.setArray.append(shot)
-        let endScore = Set.sharedInstance.sumScore
+        round.roundArray.append(shot)
+        let endScore = round.sumScore
         
-        endScoreLabel.text = Set.sharedInstance.numberString()
+        endScoreLabel.text = endScoreLabel.text.map { $0 + " \(Int(shot.score))" }
         endScoreTotalLabel.text = "\(endScore)"
         roundScoreTotalLabel.text = "\(endScore)"
-        
     }
     
 }
