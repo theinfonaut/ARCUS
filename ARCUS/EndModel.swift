@@ -13,14 +13,14 @@ var roundScores = [[Int]]()
 var currentEnd = [Int]()
 
 
-func addScoreToEnd (score: Int) {
+func addScoreToEnd (_ score: Int) {
     currentEnd.append(score)
 }
 
 // sumEndScore, can feed in any end, will send in current end as needed
 
-func sumScore(end: [Int]) -> Int {
-    return end.reduce(0, combine: +)
+func sumScore(_ end: [Int]) -> Int {
+    return end.reduce(0, +)
 }
 
 // then call --> sumScore(currentEnd)

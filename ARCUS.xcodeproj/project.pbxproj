@@ -80,6 +80,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9162637F1E88297900C89FD5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DA47CD5D1D80B79E00F865B8 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		916263801E88298000C89FD5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA47CD5F1D80B79E00F865B8 /* Main.storyboard */,
+				DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */,
+				DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		916263811E88298400C89FD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA47CDAC1D8A1F0E00F865B8 /* EndModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		DA47CD4F1D80B79D00F865B8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,13 +129,11 @@
 		DA47CD5A1D80B79E00F865B8 /* ARCUS */ = {
 			isa = PBXGroup;
 			children = (
+				916263811E88298400C89FD5 /* Model */,
+				916263801E88298000C89FD5 /* View */,
+				9162637F1E88297900C89FD5 /* Controller */,
 				DA47CD5B1D80B79E00F865B8 /* AppDelegate.swift */,
-				DA47CD5D1D80B79E00F865B8 /* ViewController.swift */,
-				DA47CDAC1D8A1F0E00F865B8 /* EndModel.swift */,
-				DACF8BCA1D94B8EC00C3BC5E /* ButtonModel.swift */,
-				DA47CD5F1D80B79E00F865B8 /* Main.storyboard */,
 				DA47CD651D80B79E00F865B8 /* Assets.xcassets */,
-				DA47CD671D80B79E00F865B8 /* LaunchScreen.storyboard */,
 				DA47CD6A1D80B79E00F865B8 /* Info.plist */,
 				DA47CD621D80B79E00F865B8 /* ARCUS.xcdatamodeld */,
 			);
@@ -203,13 +227,16 @@
 					DA47CD571D80B79E00F865B8 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 3FZ36259FX;
+						LastSwiftMigration = 0820;
 					};
 					DA47CD6E1D80B79E00F865B8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = DA47CD571D80B79E00F865B8;
 					};
 					DA47CD791D80B79E00F865B8 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = DA47CD571D80B79E00F865B8;
 					};
 				};
@@ -421,6 +448,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -435,6 +463,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -446,6 +475,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCUS.app/ARCUS";
 			};
 			name = Debug;
@@ -458,6 +488,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ARCUS.app/ARCUS";
 			};
 			name = Release;
@@ -469,6 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ARCUS;
 			};
 			name = Debug;
@@ -480,6 +512,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = arcusarchery.ARCUSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = ARCUS;
 			};
 			name = Release;
