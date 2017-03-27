@@ -12,8 +12,8 @@ class Round {
     var roundArray = [Shot]()
     var currentEnding = [Double]()
     var roundScores = [[Double]]()
-    var sumScore: Int {
-        return roundArray.reduce(0) { $0 + Int($1.score) }
+    var sumScore: Double {
+        return roundArray.reduce(0) { $0 + $1.score }
     }
     
     func numberString() -> String {
