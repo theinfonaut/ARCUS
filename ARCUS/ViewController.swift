@@ -14,7 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var roundScoreTotalLabel: UILabel!
     var round: Round!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         round = Round()
